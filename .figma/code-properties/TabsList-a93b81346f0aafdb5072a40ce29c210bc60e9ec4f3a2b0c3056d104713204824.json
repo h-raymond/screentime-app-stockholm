@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TabsList",
+    "filePath": "src/design-system/components/tabs.tsx"
+  },
+  "codeProperties": {
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "line"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "line": "Line"
+        }
+      }
+    }
+  }
+}

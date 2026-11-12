@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "PageContainer",
+    "filePath": "src/design-system/patterns/page-container.tsx"
+  },
+  "codeProperties": {
+    "as": {
+      "type": "string",
+      "name": "Element",
+      "defaultValue": "div",
+      "options": [
+        "div",
+        "form"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "div": "Div",
+          "form": "Form"
+        }
+      }
+    },
+    "width": {
+      "type": "string",
+      "name": "Width",
+      "defaultValue": "wide",
+      "options": [
+        "wide",
+        "narrow"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "wide": "Wide",
+          "narrow": "Narrow"
+        }
+      }
+    }
+  }
+}

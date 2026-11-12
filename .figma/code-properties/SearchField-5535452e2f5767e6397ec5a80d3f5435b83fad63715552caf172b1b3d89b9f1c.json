@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SearchField",
+    "filePath": "src/design-system/components/search-field.tsx"
+  },
+  "codeProperties": {
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder"
+    },
+    "clearLabel": {
+      "type": "string",
+      "name": "Clear Label",
+      "defaultValue": "Clear search"
+    },
+    "variant": {
+      "type": "enum",
+      "name": "Variant",
+      "options": ["filled", "outline"],
+      "defaultValue": "filled"
+    },
+    "disabled": {
+      "type": "boolean",
+      "name": "Disabled",
+      "defaultValue": false
+    }
+  }
+}

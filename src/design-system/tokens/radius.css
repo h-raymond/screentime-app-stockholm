@@ -1,0 +1,16 @@
+/* 8px radius roles. Keep Tailwind/shadcn class names (rounded-lg, rounded-xl).
+   Figma: radius/sm → rounded-sm, radius/xl → rounded-xl, radius/full → rounded-full. */
+
+:root {
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --radius-sm: 0.5rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 1.5rem;
+}

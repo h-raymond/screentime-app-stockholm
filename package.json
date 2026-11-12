@@ -1,0 +1,47 @@
+{
+  "name": "pickup",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "figma:connect": "figma connect publish",
+    "postinstall": "node scripts/copy-maplibre-worker.mjs",
+    "shots": "node scripts/screenshot.mjs",
+    "flow": "node scripts/flow.mjs",
+    "deploy": "node scripts/deploy-figma.mjs production",
+    "deploy:staging": "node scripts/deploy-figma.mjs staging",
+    "deploy:production": "node scripts/deploy-figma.mjs production"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "maplibre-gl": "^6.9.0",
+    "next": "16.3.4",
+    "radix-ui": "^1.6.7",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "shadcn": "^4.19.1",
+    "tailwind-merge": "^3.6.0",
+    "tw-animate-css": "^1.4.0",
+    "vaul": "^1.1.2",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@figma/code-connect": "^2.0.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "playwright": "^1.62.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

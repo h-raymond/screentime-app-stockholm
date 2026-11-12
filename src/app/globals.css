@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "../design-system/tokens/index.css";
+@import "./styles/chrome.css";
+@import "./styles/map.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  /* Kill the browser's blue focus ring. Keyboard focus gets a 3px ring-colored
+     outline that follows the element's radius — same weight as form controls.
+     DS components that already use `outline-none` + `ring-3` keep that treatment. */
+  :focus {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 0;
+  }
+
+  canvas:focus,
+  canvas:focus-visible {
+    outline: none;
+  }
+
+  /* Base type lives on body so the root keeps a 16px rem basis for Tailwind sizing. */
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-special);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0;
+  }
+}

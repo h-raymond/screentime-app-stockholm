@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "StickyActionBar",
+    "filePath": "src/design-system/patterns/sticky-action-bar.tsx"
+  },
+  "codeProperties": {
+    "position": {
+      "type": "string",
+      "name": "Position",
+      "defaultValue": "fixed",
+      "options": [
+        "fixed",
+        "static"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "fixed": "Fixed",
+          "static": "Static"
+        }
+      }
+    }
+  }
+}

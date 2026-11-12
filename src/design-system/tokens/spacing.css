@@ -1,0 +1,9 @@
+/* Layout uses Tailwind’s default --spacing (4px) at even keys (8px grid):
+   2=8, 4=16, 6=24, 8=32, 12=48. Figma Spacing collection uses those keys.
+   Named sizes are control metrics only. */
+
+@theme inline {
+  --spacing-control: 3rem;
+  --spacing-control-compact: 2rem;
+  --spacing-icon: 1.5rem;
+}

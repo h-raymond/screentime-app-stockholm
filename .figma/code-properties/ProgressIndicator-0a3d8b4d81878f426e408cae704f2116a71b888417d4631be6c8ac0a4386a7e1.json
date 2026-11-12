@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "ProgressIndicator",
+    "filePath": "src/design-system/components/progress-indicator.tsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "defaultValue": "Loading"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* Pickup app chrome — not part of the shared design system. */
+
+@theme inline {
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-foreground: var(--tertiary-foreground);
+  --spacing-floating-nav: calc(5.75rem + env(safe-area-inset-bottom, 0px));
+  --spacing-browse-header: 5rem;
+}
+
+:root {
+  --tertiary: var(--palette-lime-800);
+  --tertiary-foreground: var(--palette-lime-200);
+}
+
+.dark {
+  --tertiary: var(--palette-lime-300);
+  --tertiary-foreground: var(--palette-lime-800);
+}

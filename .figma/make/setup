@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# First-open setup. Runs once and is cached for later opens.
+# Verifies the system-level tools this project needs are present.
+set -euo pipefail
+
+echo "==> Checking system dependencies"
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "ERROR: Node.js is not installed or not on PATH." >&2
+  exit 1
+fi
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "ERROR: npm is not installed or not on PATH." >&2
+  exit 1
+fi
+
+echo "node $(node -v)"
+echo "npm  $(npm -v)"
+echo "==> Setup complete"

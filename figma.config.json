@@ -1,0 +1,10 @@
+{
+  "codeConnect": {
+    "parser": "react",
+    "include": ["src/design-system/**/*.figma.ts"],
+    "label": "React",
+    "importPaths": {
+      "src/design-system/**": "@pickup/design-system"
+    }
+  }
+}
