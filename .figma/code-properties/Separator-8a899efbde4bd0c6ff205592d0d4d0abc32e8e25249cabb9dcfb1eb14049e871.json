@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Separator",
+    "filePath": "src/design-system/components/separator.tsx"
+  },
+  "codeProperties": {
+    "orientation": {
+      "type": "string",
+      "name": "Orientation",
+      "defaultValue": "horizontal",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "horizontal": "Horizontal",
+          "vertical": "Vertical"
+        }
+      }
+    },
+    "decorative": {
+      "type": "boolean",
+      "name": "Decorative",
+      "defaultValue": true
+    }
+  }
+}

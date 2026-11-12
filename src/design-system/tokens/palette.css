@@ -1,0 +1,78 @@
+/* Palette ramps — theme-independent. Semantic roles alias these in semantic.css.
+   Figma: Palette collection, code syntax `--palette-plum-700`. */
+
+:root {
+  --palette-neutral-0: #ffffff;
+  --palette-neutral-50: #fcfcfc;
+  --palette-neutral-100: #f6f6f6;
+  --palette-neutral-200: #e4e4e4;
+  --palette-neutral-300: #c8c8c8;
+  --palette-neutral-400: #a6a6a6;
+  --palette-neutral-500: #828282;
+  --palette-neutral-600: #606060;
+  --palette-neutral-700: #434343;
+  --palette-neutral-800: #2d2d2d;
+  --palette-neutral-900: #171717;
+  --palette-neutral-950: #0d0d0d;
+
+  --palette-mist-50: #f6fdff;
+  --palette-mist-100: #f0f9fb;
+  --palette-mist-200: #deedf2;
+  --palette-mist-300: #d1e1e7;
+  --palette-mist-400: #c8dae1;
+  --palette-mist-500: #aec3cc;
+  --palette-mist-600: #7b929e;
+  --palette-mist-700: #4a606b;
+  --palette-mist-800: #27393e;
+  --palette-mist-900: #152327;
+  --palette-mist-950: #091517;
+
+  --palette-plum-50: #ffffff;
+  --palette-plum-100: #f3e9ff;
+  --palette-plum-200: #dfbdf5;
+  --palette-plum-300: #c39bd3;
+  --palette-plum-400: #a87bb1;
+  --palette-plum-500: #8e5c91;
+  --palette-plum-600: #753e72;
+  --palette-plum-700: #5e2355;
+  --palette-plum-800: #591d4a;
+  --palette-plum-850: #4d153e;
+  --palette-plum-900: #3c092c;
+  --palette-plum-950: #230016;
+
+  --palette-lime-50: #ffffff;
+  --palette-lime-100: #fbffdc;
+  --palette-lime-200: #f1feba;
+  --palette-lime-300: #d2e4a9;
+  --palette-lime-400: #b4c797;
+  --palette-lime-500: #97ab84;
+  --palette-lime-600: #7b8e71;
+  --palette-lime-700: #61725d;
+  --palette-lime-800: #4a5749;
+  --palette-lime-900: #343c35;
+  --palette-lime-950: #2a302b;
+
+  --palette-olive-50: #ecf9ee;
+  --palette-olive-100: #e6f4e8;
+  --palette-olive-200: #d1e3d4;
+  --palette-olive-300: #b1cab5;
+  --palette-olive-400: #8bab91;
+  --palette-olive-500: #618a6a;
+  --palette-olive-600: #386a46;
+  --palette-olive-700: #094e26;
+  --palette-olive-800: #0f3e20;
+  --palette-olive-900: #102216;
+  --palette-olive-950: #0f1912;
+
+  --palette-danger-50: #ffffff;
+  --palette-danger-100: #fefbfa;
+  --palette-danger-200: #ffd8d3;
+  --palette-danger-300: #fe9b8f;
+  --palette-danger-400: #f94a40;
+  --palette-danger-500: #e7000b;
+  --palette-danger-600: #cf0705;
+  --palette-danger-700: #9d0d04;
+  --palette-danger-800: #6b0d04;
+  --palette-danger-900: #4d0b04;
+  --palette-danger-950: #490a03;
+}

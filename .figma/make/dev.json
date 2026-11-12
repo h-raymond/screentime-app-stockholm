@@ -1,0 +1,104 @@
+{
+  "pointAndEdit": {
+    "priorityPaths": {
+      "prefer": [
+        "src/app/**/*.tsx",
+        "src/app/**/*.ts",
+        "src/components/**/*.tsx",
+        "src/components/**/*.ts"
+      ],
+      "deprioritize": [
+        "src/design-system/components/**/*.tsx",
+        "src/design-system/components/**/*.ts",
+        "src/design-system/patterns/**/*.tsx",
+        "src/design-system/patterns/**/*.ts",
+        "src/design-system/playground/**/*.tsx",
+        "src/design-system/tokens/**/*.css"
+      ],
+      "exclude": [
+        "src/design-system/figma/**",
+        "src/**/*.figma.ts",
+        "src/**/*.figma.tsx",
+        "src/**/*.figma.js",
+        "src/**/*.figma.jsx",
+        "src/lib/**",
+        "scripts/**",
+        "public/**",
+        "node_modules/**",
+        ".next/**",
+        ".figma/**"
+      ]
+    },
+    "libraryPaths": {
+      "local": [
+        "src/design-system/components/**/*.tsx",
+        "src/design-system/components/**/*.ts",
+        "src/design-system/patterns/**/*.tsx",
+        "src/design-system/patterns/**/*.ts",
+        "src/design-system/index.ts"
+      ],
+      "external": [
+        "node_modules/radix-ui/**",
+        "node_modules/@radix-ui/**"
+      ]
+    },
+    "pathClassification": {
+      "classifier": "sonnet"
+    },
+    "exclusions": [
+      {
+        "glob": "src/design-system/figma/**",
+        "reason": "Contains Figma Code Connect mapping files (.figma.ts) that map design components to Figma node IDs — not UI rendering source anchors and must not be selected for point-and-edit."
+      },
+      {
+        "glob": "src/**/*.figma.ts",
+        "reason": "Figma Code Connect mapping files are not UI source anchors and are explicitly excluded per classification rules."
+      },
+      {
+        "glob": "src/**/*.figma.tsx",
+        "reason": "Figma Code Connect mapping files are not UI source anchors and are explicitly excluded per classification rules."
+      },
+      {
+        "glob": "src/**/*.figma.js",
+        "reason": "Figma Code Connect mapping files are not UI source anchors and are explicitly excluded per classification rules."
+      },
+      {
+        "glob": "src/**/*.figma.jsx",
+        "reason": "Figma Code Connect mapping files are not UI source anchors and are explicitly excluded per classification rules."
+      },
+      {
+        "glob": "src/lib/**",
+        "reason": "Contains application logic, data access, state management, geo utilities, types, and static data — none are direct UI rendering surfaces suitable as point-and-edit anchors."
+      },
+      {
+        "glob": "scripts/**",
+        "reason": "Build, deployment, and screenshot automation tooling; not UI source code."
+      },
+      {
+        "glob": "public/**",
+        "reason": "Static assets only; no UI component source."
+      },
+      {
+        "glob": "node_modules/**",
+        "reason": "External dependency installations; not editable project source."
+      },
+      {
+        "glob": ".next/**",
+        "reason": "Next.js build output containing generated files; should not be edited directly."
+      },
+      {
+        "glob": ".figma/**",
+        "reason": "Figma Make configuration, code-properties metadata, and dev-server scripts; not UI source anchors."
+      }
+    ],
+    "generated": {
+      "schemaVersion": 2,
+      "source": "setup-agent.point-and-edit-path-classifier",
+      "prompt": "same-turn-setup-subagent-v5",
+      "model": "claude-sonnet-4-6",
+      "createdAt": "2026-09-26T00:00:00.000Z",
+      "confidence": 0.95,
+      "explanation": "The repository has a clear Next.js App Router structure with a barrel-exported local design system (src/design-system/index.ts), well-separated app pages (src/app/) and app-specific components (src/components/), and all Code Connect files isolated under src/design-system/figma/, making priority and library boundaries unambiguous."
+    }
+  }
+}

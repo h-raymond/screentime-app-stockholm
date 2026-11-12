@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "IconButton",
+    "filePath": "src/design-system/components/icon-button.tsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "compact"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "compact": "Compact"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "outline",
+        "secondary",
+        "overlay",
+        "ghost",
+        "destructive"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "outline": "Outline",
+          "secondary": "Secondary",
+          "overlay": "Overlay",
+          "ghost": "Ghost",
+          "destructive": "Destructive"
+        }
+      }
+    },
+    "icon": {
+      "type": {
+        "name": "other",
+        "value": "figma-reference"
+      },
+      "name": "Icon",
+      "control": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "name": "Disabled",
+      "defaultValue": false
+    },
+    "asChild": {
+      "type": "boolean",
+      "name": "As Child",
+      "defaultValue": false
+    }
+  }
+}

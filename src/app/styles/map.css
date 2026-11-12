@@ -1,0 +1,73 @@
+/* MapLibre chrome and map palette — app domain, not the shared DS. */
+
+:root {
+  --map-ground: var(--muted);
+  --map-block: #bbd1d8;
+  --map-building: #b5ccd4;
+  --map-road-path: #aec8d0;
+  --map-green: #aecbc4;
+  --map-road-minor: #a4c1cb;
+  --map-road-arterial: #9dbcc7;
+  --map-road-major: #ebfeba;
+  --map-water: #97b8c3;
+  --map-label: #4a595e;
+}
+
+.dark {
+  --map-ground: var(--muted);
+  --map-block: #2b3034;
+  --map-building: #272c30;
+  --map-road-path: #23282c;
+  --map-green: #25312a;
+  --map-road-minor: #202529;
+  --map-road-arterial: #1d2227;
+  --map-road-major: #585928;
+  --map-water: #192026;
+  --map-label: #deedf2;
+}
+
+.pickup-map,
+.maplibregl-map {
+  background: var(--map-ground);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  isolation: isolate;
+  outline: none;
+}
+
+.pickup-map .maplibregl-canvas,
+.pickup-map .maplibregl-control-container,
+.pickup-map .maplibregl-marker > * {
+  transition: opacity 160ms ease-out;
+}
+
+.pickup-map[data-map-ready="false"] .maplibregl-canvas,
+.pickup-map[data-map-ready="false"] .maplibregl-control-container,
+.pickup-map[data-map-ready="false"] .maplibregl-marker > * {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pickup-map .maplibregl-canvas,
+  .pickup-map .maplibregl-control-container,
+  .pickup-map .maplibregl-marker > * {
+    transition: none;
+  }
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgb(from var(--background) r g b / 85%) !important;
+  color: var(--muted-foreground);
+}
+
+.maplibregl-ctrl-attrib a {
+  color: var(--muted-foreground);
+}
+
+.maplibregl-marker {
+  background: none;
+}

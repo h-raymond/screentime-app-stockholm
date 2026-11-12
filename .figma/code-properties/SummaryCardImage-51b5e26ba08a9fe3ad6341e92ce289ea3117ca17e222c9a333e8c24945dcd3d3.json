@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SummaryCardImage",
+    "filePath": "src/design-system/patterns/summary-card.tsx"
+  },
+  "codeProperties": {
+    "src": {
+      "type": "string",
+      "name": "Image URL"
+    },
+    "alt": {
+      "type": "string",
+      "name": "Alt Text"
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "compact"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "compact": "Compact"
+        }
+      }
+    }
+  }
+}

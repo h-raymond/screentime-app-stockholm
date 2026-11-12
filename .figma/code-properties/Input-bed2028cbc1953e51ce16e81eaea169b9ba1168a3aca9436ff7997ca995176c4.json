@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Input",
+    "filePath": "src/design-system/components/input.tsx"
+  },
+  "codeProperties": {
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "filled",
+      "options": [
+        "filled",
+        "ghost"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "filled": "Filled",
+          "ghost": "Ghost"
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "name": "Type"
+    },
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder"
+    },
+    "disabled": {
+      "type": "boolean",
+      "name": "Disabled",
+      "defaultValue": false
+    }
+  }
+}

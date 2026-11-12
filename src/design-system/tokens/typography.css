@@ -1,0 +1,56 @@
+@theme inline {
+  --font-sans: var(--font-special);
+  --font-mono: var(--font-dm-mono);
+  --font-heading: var(--font-special);
+  --font-display: var(--font-special-condensed);
+  --text-label-small: 0.75rem;
+  --text-label-small--line-height: 1rem;
+  --text-body-medium: 1rem;
+  --text-body-medium--line-height: 1.5rem;
+  --text-body-large: 1.125rem;
+  --text-body-large--line-height: 1.5rem;
+  --text-heading-medium: 1.5rem;
+  --text-heading-medium--line-height: 2rem;
+  --text-display-medium: 2rem;
+  --text-display-medium--line-height: 2rem;
+}
+
+@utility type-label-small {
+  font-family: var(--font-dm-mono);
+  font-size: var(--text-label-small);
+  font-weight: 400;
+  line-height: var(--text-label-small--line-height);
+  letter-spacing: 0;
+}
+
+@utility type-body-medium {
+  font-family: var(--font-special);
+  font-size: var(--text-body-medium);
+  font-weight: 400;
+  line-height: var(--text-body-medium--line-height);
+  letter-spacing: 0;
+}
+
+@utility type-body-large {
+  font-family: var(--font-special);
+  font-size: var(--text-body-large);
+  font-weight: 400;
+  line-height: var(--text-body-large--line-height);
+  letter-spacing: 0.025em;
+}
+
+@utility type-heading-medium {
+  font-family: var(--font-special);
+  font-size: var(--text-heading-medium);
+  font-weight: 500;
+  line-height: var(--text-heading-medium--line-height);
+  letter-spacing: 0;
+}
+
+@utility type-display-medium {
+  font-family: var(--font-special-condensed);
+  font-size: var(--text-display-medium);
+  font-weight: 400;
+  line-height: var(--text-display-medium--line-height);
+  letter-spacing: 0;
+}

@@ -1,0 +1,105 @@
+/* Stock shadcn semantic roles. Values alias palette ramps.
+   Primary, overlay, and destructive states use solid neighboring steps.
+   Hairlines and interaction layers are a mist midtone at a fixed opacity;
+   the midtone carries enough chroma to stay tonal even over a white card.
+   Figma Semantic collection (light/dark): `--primary`, `--primary-hover`, `--card`. */
+
+:root {
+  --background: var(--palette-mist-200);
+  --foreground: var(--palette-neutral-800);
+  --card: var(--palette-neutral-0);
+  --card-hover: var(--palette-mist-50);
+  --card-foreground: var(--palette-neutral-800);
+  --popover: var(--palette-neutral-0);
+  --popover-foreground: var(--palette-neutral-800);
+  --primary: var(--palette-plum-700);
+  --primary-hover: var(--palette-plum-800);
+  --primary-pressed: var(--palette-plum-850);
+  --primary-foreground: var(--palette-mist-200);
+  --secondary: var(--palette-mist-400);
+  --secondary-hover: var(--palette-mist-500);
+  --secondary-foreground: var(--palette-neutral-800);
+  --interaction-subtle: rgb(
+    from var(--palette-mist-600) r g b / var(--opacity-10)
+  );
+  --interaction: rgb(
+    from var(--palette-mist-600) r g b / var(--opacity-15)
+  );
+  --interaction-strong: rgb(
+    from var(--palette-mist-600) r g b / var(--opacity-20)
+  );
+  --muted: var(--palette-mist-300);
+  --muted-foreground: var(--palette-mist-700);
+  --accent: var(--palette-lime-200);
+  --accent-hover: var(--palette-lime-300);
+  --accent-foreground: var(--palette-olive-700);
+  --destructive: var(--palette-danger-500);
+  --destructive-hover: var(--palette-danger-600);
+  --destructive-foreground: var(--palette-neutral-0);
+  --border: rgb(from var(--palette-mist-600) r g b / var(--opacity-15));
+  --input: rgb(from var(--palette-mist-600) r g b / var(--opacity-15));
+  --ring: var(--palette-plum-950);
+  --chart-1: var(--palette-plum-700);
+  --chart-2: var(--palette-mist-200);
+  --chart-3: var(--palette-lime-200);
+  --chart-4: var(--palette-lime-800);
+  --chart-5: var(--palette-lime-300);
+  --sidebar: var(--palette-neutral-0);
+  --sidebar-foreground: var(--palette-neutral-800);
+  --sidebar-primary: var(--palette-plum-700);
+  --sidebar-primary-foreground: var(--palette-mist-200);
+  --sidebar-accent: var(--palette-mist-200);
+  --sidebar-accent-foreground: var(--palette-plum-700);
+  --sidebar-border: rgb(from var(--palette-mist-600) r g b / var(--opacity-15));
+  --sidebar-ring: var(--palette-plum-950);
+}
+
+.dark {
+  --background: var(--palette-mist-950);
+  --foreground: var(--palette-mist-100);
+  --card: var(--palette-mist-900);
+  --card-hover: var(--palette-mist-800);
+  --card-foreground: var(--palette-mist-100);
+  --popover: var(--palette-mist-900);
+  --popover-foreground: var(--palette-mist-100);
+  --primary: var(--palette-plum-300);
+  --primary-hover: var(--palette-plum-200);
+  --primary-pressed: var(--palette-plum-100);
+  --primary-foreground: var(--palette-plum-950);
+  --secondary: var(--palette-mist-800);
+  --secondary-hover: var(--palette-mist-700);
+  --secondary-foreground: var(--palette-mist-100);
+  --interaction-subtle: rgb(
+    from var(--palette-mist-50) r g b / var(--opacity-10)
+  );
+  --interaction: rgb(
+    from var(--palette-mist-50) r g b / var(--opacity-15)
+  );
+  --interaction-strong: rgb(
+    from var(--palette-mist-50) r g b / var(--opacity-20)
+  );
+  --muted: var(--palette-mist-800);
+  --muted-foreground: var(--palette-mist-500);
+  --accent: var(--palette-lime-200);
+  --accent-hover: var(--palette-lime-300);
+  --accent-foreground: var(--palette-olive-700);
+  --destructive: var(--palette-danger-400);
+  --destructive-hover: var(--palette-danger-500);
+  --destructive-foreground: var(--palette-neutral-0);
+  --border: rgb(from var(--palette-mist-50) r g b / var(--opacity-15));
+  --input: rgb(from var(--palette-mist-50) r g b / var(--opacity-15));
+  --ring: var(--palette-mist-200);
+  --chart-1: var(--palette-plum-300);
+  --chart-2: var(--palette-lime-200);
+  --chart-3: var(--palette-lime-300);
+  --chart-4: var(--palette-mist-400);
+  --chart-5: var(--palette-mist-600);
+  --sidebar: var(--palette-mist-900);
+  --sidebar-foreground: var(--palette-mist-100);
+  --sidebar-primary: var(--palette-plum-300);
+  --sidebar-primary-foreground: var(--palette-plum-950);
+  --sidebar-accent: var(--palette-mist-800);
+  --sidebar-accent-foreground: var(--palette-mist-100);
+  --sidebar-border: rgb(from var(--palette-mist-50) r g b / var(--opacity-15));
+  --sidebar-ring: var(--palette-mist-200);
+}

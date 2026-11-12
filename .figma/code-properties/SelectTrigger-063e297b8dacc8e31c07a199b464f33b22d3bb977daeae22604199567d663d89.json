@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SelectTrigger",
+    "filePath": "src/design-system/components/select.tsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "compact"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "compact": "Compact"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "filled",
+      "options": [
+        "filled",
+        "ghost"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "filled": "Filled",
+          "ghost": "Ghost"
+        }
+      }
+    },
+    "disabled": {
+      "type": "boolean",
+      "name": "Disabled",
+      "defaultValue": false
+    }
+  }
+}

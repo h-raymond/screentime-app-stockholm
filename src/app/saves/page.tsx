@@ -1,0 +1,49 @@
+"use client";
+
+import Link from "next/link";
+
+import { HeartIcon } from "@heroicons/react/24/outline";
+
+import { Button, EmptyState, PageContainer, Skeleton } from "@/design-system";
+import { ItemCard } from "@/components/item-card";
+import { PageHeader } from "@/components/page-header";
+import { findItem, useHydrated, useStore } from "@/lib/store";
+
+export default function SavesPage() {
+  const hydrated = useHydrated();
+  const savedIds = useStore((s) => s.savedIds);
+  const listings = useStore((s) => s.listings);
+  const items = savedIds
+    .map((id) => findItem(id, listings))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item));
+
+  return (
+    <PageContainer className="pb-10">
+      <PageHeader title="Saves" fallbackHref="/you" />
+      {!hydrated ? (
+        <div className="grid grid-cols-2 gap-px p-4 md:grid-cols-3 md:px-6 lg:grid-cols-4">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <Skeleton key={i} className="aspect-3/4 rounded-xl" />
+          ))}
+        </div>
+      ) : items.length === 0 ? (
+        <EmptyState
+          icon={HeartIcon}
+          title="Nothing saved yet"
+          description="Tap the heart on any listing and it will show up here so you can come back to it."
+          action={
+            <Button asChild>
+              <Link href="/">Find something</Link>
+            </Button>
+          }
+        />
+      ) : (
+        <div className="grid grid-cols-2 border-t md:grid-cols-3 lg:grid-cols-4">
+          {items.map((item) => (
+            <ItemCard key={item.id} item={item} />
+          ))}
+        </div>
+      )}
+    </PageContainer>
+  );
+}

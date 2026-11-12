@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Switch",
+    "filePath": "src/design-system/components/switch.tsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "sm"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "sm": "Small"
+        }
+      }
+    },
+    "disabled": {
+      "type": "boolean",
+      "name": "Disabled",
+      "defaultValue": false
+    },
+    "defaultChecked": {
+      "type": "boolean",
+      "name": "Default Checked",
+      "defaultValue": false
+    }
+  }
+}
